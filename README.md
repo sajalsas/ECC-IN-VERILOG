@@ -10,3 +10,4 @@ Simulation Waveform
 
 
 Schematic
+![Alt text](https://github.com/sajalsas/ECC-IN-VERILOG/blob/821424c72101972d755033c102b590b3599fd3ab/Schematic.png)
