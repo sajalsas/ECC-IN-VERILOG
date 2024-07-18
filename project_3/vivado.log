@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jul 18 17:54:14 2024
+# Process ID: 1344
+# Current directory: C:/Users/Lenovo/Desktop/hamming code verilog/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24176 C:\Users\Lenovo\Desktop\hamming code verilog\project_3\project_3.xpr
+# Log file: C:/Users/Lenovo/Desktop/hamming code verilog/project_3/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/hamming code verilog/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Lenovo/project_3' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/Users/Lenovo/Desktop/hamming code verilog/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store'; using path 'C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store' instead.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.gen/sources_1', nor could it be found using path 'C:/Users/Lenovo/project_3/project_3.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1249.695 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_hamming_encoder'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hamming_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hamming_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sources_1/new/HC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hamming_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sim_1/new/hc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hamming_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.sim/sim_1/behav/xsim'
+"xelab -wto 8b46e1cf34804ab9bbb734c6f3783359 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_hamming_encoder_behav xil_defaultlib.tb_hamming_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 8b46e1cf34804ab9bbb734c6f3783359 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_hamming_encoder_behav xil_defaultlib.tb_hamming_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sources_1/new/HC.v" Line 1. Module hamming_encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sources_1/new/HC.v" Line 1. Module hamming_encoder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hamming_encoder
+Compiling module xil_defaultlib.tb_hamming_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hamming_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_hamming_encoder_behav -key {Behavioral:sim_1:Functional:tb_hamming_encoder} -tclbatch {tb_hamming_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_hamming_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sim_1/new/hc_tb.v" Line 54
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_hamming_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.695 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: hamming_encoder
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1833.883 ; gain = 265.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hamming_encoder' [C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sources_1/new/HC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hamming_encoder' (1#1) [C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.srcs/sources_1/new/HC.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1904.766 ; gain = 336.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1904.766 ; gain = 336.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1904.766 ; gain = 336.234
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1904.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1960.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2115.738 ; gain = 547.207
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2115.738 ; gain = 866.043

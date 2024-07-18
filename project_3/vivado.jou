@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jul 18 17:54:14 2024
+# Process ID: 1344
+# Current directory: C:/Users/Lenovo/Desktop/hamming code verilog/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24176 C:\Users\Lenovo\Desktop\hamming code verilog\project_3\project_3.xpr
+# Log file: C:/Users/Lenovo/Desktop/hamming code verilog/project_3/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/hamming code verilog/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lenovo/Desktop/hamming code verilog/project_3/project_3.xpr}
+launch_simulation
+source tb_hamming_encoder.tcl
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
